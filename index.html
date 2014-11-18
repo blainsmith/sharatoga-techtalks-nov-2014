@@ -4,21 +4,23 @@
     <title>Title</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
-      @import url(http://fonts.googleapis.com/css?family=Lato);
+      @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,200,600);
       @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Lato'; }
-      h1, h2, h3 { font-weight: bold; }
+      body { font-family: 'Titillium Web'; }
+      h1, h2, h3 { font-weight: normal; }
       h1 { 
         font-size: 45px !important;
-        color: #666;
       }
       a { color: #e96a24 !important; }
       a:visited { color: #e96a24 !important; }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code, .remark-inline-code { 
+        font-family: 'Ubuntu Mono'; 
+      }
       .remark-code {
         display: block;
         padding: .5em;
+        font-size: 14px;
         background-color: #f0f0f0;
       }
     </style>
@@ -26,9 +28,10 @@
   <body>
     <textarea id="source">
 
-class: center, middle
+class: bottom, right
 
 # `git` a Free, Highly Scaled Web Host
+### Blain Smith
 
 ---
 
@@ -42,13 +45,6 @@ class: center
 background-image: url(https://pbs.twimg.com/profile_images/428559080953626625/fqZiJ6TQ_400x400.png)
 
 # Engineer at...
-
----
-
-class: center
-background-image: url(http://www.hhrjournal.org/wp-content/uploads/sites/13/2013/05/HSPH-logo_stk_RGB_large.jpg)
-
-# Formally from...
 
 ---
 
@@ -144,9 +140,9 @@ Jekyll is a site generator that takes in HTML templates and Markdown files and t
 
 ---
 
-# Jekyll Example (Template + Markdown = Page)
+# Jekyll Example (Layout + Markdown = Page)
 
-template.html
+page-layout.html
 
 ```html
 <html>
@@ -162,6 +158,7 @@ page.md
 
 ```
 title: My Article Title
+layout: page-layout
 ---
 
 This is the body content of my article. This article should get 1 million hits a month!
@@ -181,13 +178,11 @@ page.html
 
 ---
 
-class: center
-
 # Super Top Secret Setup (Users and Organizations)
 
 ## 1. Create a repository called "USERNAME.github.io"
 
-## 2. Clone, add/edit files, commit, and push
+## 2. Do `git` things and push to publish
 
 ## 3. View live at http://USERNAME.github.io
 
@@ -195,15 +190,13 @@ Example at http://github.com/blainsmith/blainsmith.github.io
 
 ---
 
-class: center
-
 # Super Top Secret Setup (Individual Projects)
 
-## 1. Create a branch in your project repository called "gh-pages"
+## 1. Create a "gh-pages" branch in your project repository
 
-## 2. Clone, add/edit files, commit, and push
+## 2. Do `git` things and push to publish
 
-## 3. View live at http://USERNAME.github.io/PROJECTNAME
+## 3. View live at http://USERNAME.github.io/PROJECT
 
 Example at https://github.com/twbs/bootstrap/tree/gh-pages
 
@@ -289,7 +282,9 @@ class: center
 
 # Popular Sites Powered by GitHub Pages
 
-![techtalks](imgs/sharatoga-techtalks-nov-2014.png)
+# THESE SLIDES!
+
+![mindblown](http://www.sharegif.com/wp-content/uploads/2014/04/mind-blownemotionsshockedmind-blowing.gif)
 
 http://blainsmith.com/sharatoga-techtalks-nov-2014
 
